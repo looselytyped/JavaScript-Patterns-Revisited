@@ -29,6 +29,8 @@ SuperHero.prototype = Object.create(Person.prototype, {
   }
 });
 
+SuperHero.prototype.constructor = SuperHero;
+
 var captainAmerica = new SuperHero("Captain America");
 var thor = new SuperHero("Thor");
 
